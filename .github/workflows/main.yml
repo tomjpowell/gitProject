@@ -3,7 +3,7 @@ on: [push]
 jobs:
    
   build:
-    runs-on: slef-hosted
+    runs-on: self-hosted
     steps:
 
       # Runs a single command using the runners shell
