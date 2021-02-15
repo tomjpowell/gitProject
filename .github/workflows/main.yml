@@ -9,5 +9,5 @@ jobs:
       # Runs a single command using the runners shell
       - name: Copy change-build to change-build 2
         run: |
-          cd /home/itrinegy/Development/Emulator-Build
-          cp change-build.sh change-build2.sh
+           sshpass -p itrinegy sftp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no itrinegy@192.168.202.182
+           put /home/itrinegy/Development/Emulator-Build/change-build.sh .
