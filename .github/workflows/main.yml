@@ -6,7 +6,6 @@ jobs:
     runs-on: self-hosted
     steps:
 
-      # Runs a single command using the runners shell
       - name: Push change build to machines
         run: |
             cd /home/itrinegy/Development/Emulator-Build
