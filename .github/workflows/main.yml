@@ -9,7 +9,5 @@ jobs:
       # Runs a single command using the runners shell
       - name: Copy change-build to change-build 2
         run: |
-            machines=(182 133 132 167)
-            for i in $machines; do
-               echo 'put /home/itrinegy/Development/Emulator-Build/change-build.sh .' | sshpass -p itrinegy sftp -q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no itrinegy@192.168.202.$i
-            done
+            cd /home/itrinegy/Development/Emulator-Build
+            ./deploy-change-build.sh
