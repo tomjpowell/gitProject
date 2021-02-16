@@ -1,4 +1,4 @@
-name: test
+name: deploy change build script
 on: [push]
 jobs:
    
@@ -7,7 +7,7 @@ jobs:
     steps:
 
       # Runs a single command using the runners shell
-      - name: Copy change-build to change-build 2
+      - name: Push change build to machines
         run: |
             cd /home/itrinegy/Development/Emulator-Build
             ./deploy-change-build.sh
